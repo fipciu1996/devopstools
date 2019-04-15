@@ -1,0 +1,2 @@
+boto3
+zabbix_api

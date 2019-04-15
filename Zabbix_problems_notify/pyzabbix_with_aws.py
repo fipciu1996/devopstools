@@ -22,13 +22,6 @@ def memoize(function):
     memo = {}
 
     def wrapper(*args):
-        global date
-        cleared = False
-        if not cleared:
-            if date.minute == 3:
-                memoize.memo = {}
-                cleared = True
-
         if args in memo:
             return memo[args]
         else:
